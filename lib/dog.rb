@@ -2,10 +2,17 @@
 class Dog
 
   @@all = []
-  attr_accessor :name
 
+  def initialize(name)
+    @name = name
+    @@all << self
+  end
 end
 
-def initialize(name)
-  @name = name
-end
+  def self.all?
+    @@all
+    @@all.print_all
+
+    puts @name
+  end
+Pluto = dog.new
