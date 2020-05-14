@@ -9,16 +9,13 @@ class Dog
   end
 
   def self.all?
-    self.all
+    @@all.each do |dog|
+      puts dog.name
+    end
   end
 
-  def clear.all?
-    self.clear_all
-  end
-
-  def print.all?
-    self.print_all
-  end
-
+  def clear.all
+    @@all.clear
+    end
 
 end
