@@ -9,9 +9,16 @@ class Dog
   end
 
   def self.all?
-    @@all?
+    self.all
   end
 
+  def clear.all?
+    self.clear_all
+  end
+
+  def print.all?
+    self.print_all
+  end
 
 
 end
